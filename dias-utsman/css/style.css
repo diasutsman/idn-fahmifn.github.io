@@ -1,0 +1,443 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+nav .nav-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 16px;
+  border-bottom: solid #e1e1e1;
+}
+nav .nav-content .nav-links {
+  display: flex;
+  flex-basis: 65%;
+  justify-content: space-evenly;
+  list-style: none;
+}
+nav .nav-content .nav-collapse {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-content a {
+  font-size: 1rem;
+  transition: 0.3s;
+}
+nav .nav-content a:hover {
+  color: #FE481C;
+}
+nav .nav-content a.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+nav .nav-content a.logo span {
+  color: #FE481C;
+}
+nav .nav-content a.lets-chat {
+  border: 1px solid black;
+  padding: 16px 32px;
+}
+nav .nav-content a.lets-chat:hover {
+  background-color: black;
+  color: white;
+}
+
+main {
+  padding: 0 16px;
+}
+
+.hero,
+.projects,
+.skills,
+.certificates {
+  max-width: 1100px;
+  margin: 4rem auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-areas: "intro hero-img" "intro hero-img" "stats hero-img";
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+.hero .intro {
+  grid-area: intro;
+  padding: 50px 50px 50px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.hero .intro h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero .intro p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.hero .intro p span {
+  font-weight: bold;
+}
+.hero .intro .links {
+  display: flex;
+}
+.hero .intro .links a {
+  display: block;
+  padding: 16px 32px;
+  transition: 0.3s;
+}
+.hero .intro .links a.hire-me {
+  background-color: #FE481C;
+  color: white;
+}
+.hero .intro .links a.hire-me:hover {
+  background-color: #e62e01;
+}
+.hero .intro .links a:hover {
+  background-color: black;
+  color: white;
+}
+.hero .intro .infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.hero .intro .infos .info p:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.hero .stats {
+  display: grid;
+  grid-area: stats;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #061424;
+  color: white;
+  padding: 32px 32px 32px 32px;
+}
+.hero .stats .data-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: solid #474242;
+}
+.hero .hero-img {
+  grid-area: hero-img;
+  place-self: center;
+}
+.hero .hero-img img {
+  width: 100%;
+}
+
+.projects h2 {
+  margin-top: 2rem;
+}
+.projects .projects-swiper {
+  margin-top: 1.5rem;
+}
+.projects .projects-swiper .swiper-button {
+  color: #FE481C;
+  font-weight: 900;
+}
+.projects .projects-swiper .swiper-pagination-bullet-active {
+  background-color: #FE481C;
+}
+.projects .projects-swiper .swiper-slide {
+  display: grid;
+  grid-template-columns: 1fr;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  place-content: stretch;
+  height: auto;
+}
+.projects .projects-swiper .swiper-slide img {
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.projects .projects-swiper .swiper-slide a {
+  color: white;
+}
+.projects .projects-swiper .swiper-slide a.disabled {
+  pointer-events: none;
+  color: #cfcfcf;
+}
+.projects .projects-swiper .swiper-slide .text {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  display: grid;
+  place-items: center;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-content: center;
+  row-gap: 32px;
+}
+.projects .projects-swiper .swiper-slide .platform {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.projects .projects-swiper .swiper-slide:hover .text {
+  opacity: 1;
+}
+
+.certificates .certs-swiper {
+  overflow-x: hidden;
+  padding: 16px;
+}
+.certificates .certs-swiper > .swiper-wrapper {
+  transition-timing-function: linear;
+}
+.certificates .certs-swiper .swiper-slide img {
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.certificates .certs-swiper .swiper-slide img:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.skills {
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the front side (fallback if image is missing) */
+  /* Style the back side */
+}
+.skills .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skills .percentage {
+  width: 80%;
+  height: 10px;
+  background-color: #e1e1e1;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.skills .percentage .progress {
+  height: 100%;
+  background-color: #FE481C;
+}
+.skills .flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.skills .flip-card h1 {
+  margin-bottom: 0;
+}
+.skills .flip-card img {
+  width: 50%;
+}
+.skills .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.skills .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.skills .flip-card-front,
+.skills .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.skills .flip-card-front {
+  color: black;
+}
+.skills .flip-card-back {
+  transform: rotateY(180deg);
+}
+
+footer {
+  font-size: 1.3rem;
+  color: white;
+  padding: 0 16px;
+  background-color: #061424;
+}
+footer .content {
+  display: grid;
+  grid-template-columns: repeat(auto, minmax(300px, 1fr));
+  grid-template-areas: "contact maps" "copy copy";
+  max-width: 1100px;
+  margin: auto;
+  align-content: flex-start;
+}
+footer .content .contact {
+  grid-area: contact;
+}
+footer .content .maps {
+  grid-area: maps;
+  padding: 16px 0;
+  height: 300px;
+}
+footer .content .maps iframe {
+  width: 100%;
+  height: 100%;
+}
+footer .content .copy {
+  grid-area: copy;
+  padding: 32px;
+  text-align: center;
+}
+footer .content ul {
+  list-style: none;
+}
+footer .content ul li {
+  margin: 8px 0;
+}
+
+#typeIt {
+  min-height: 154.667px;
+}
+
+#typeIt1 {
+  min-height: 46.06px;
+}
+
+.fade-out {
+  -webkit-animation: fade-out 1s ease-in-out forwards;
+          animation: fade-out 1s ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #FE481C;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 100% 50%;
+}
+
+.menu-toggle span:last-child {
+  transform-origin: 100% 50%;
+}
+
+/*
+  When input checked, 
+  select the siblings that matches the selectors then apply these style to it 
+*/
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(-45deg) translate(1px, -2px);
+}
+
+.menu-toggle input:checked ~ span:last-child {
+  transform: rotate(45deg);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}

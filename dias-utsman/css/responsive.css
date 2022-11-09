@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+  nav .nav-content .nav-collapse {
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  nav .nav-content .nav-collapse .nav-links {
+    padding: 0.5rem 0;
+    flex-direction: column;
+    flex-basis: auto;
+    row-gap: 1rem;
+  }
+  nav .nav-content .nav-collapse .empty {
+    display: none;
+  }
+  nav .nav-content .nav-collapse.show {
+    display: flex;
+    max-height: 300px;
+  }
+  nav .nav-content .menu-toggle {
+    display: flex;
+  }
+  section.hero {
+    grid-template-columns: 1fr;
+    grid-template-areas: "intro" "hero-img" "stats";
+  }
+  section.hero #typeIt,
+section.hero #typeIt1 {
+    min-height: 0;
+  }
+  section.hero .intro {
+    padding: 50px 0;
+  }
+  footer .content {
+    grid-template-areas: "contact" "maps" "copy";
+  }
+}

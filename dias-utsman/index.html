@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta tags for SEO -->
+  <meta name="title" content="Dias Utsman">
+  <meta name="description" content="This is Dias Utsman Website Portfolio which is used to share the work of his">
+  <meta name="keywords"
+    content="dias utsman, dias utsman portfolio, portfolio, personal portfolio, web portfolio, projects portfolio">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="Dias Utsman">
+
+  <link rel="shortcut icon" href="./img/dias.webp" type="image/x-icon">
+
+  <script src="https://kit.fontawesome.com/3f0daba817.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Dias Utsman</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-content">
+      <a href="#" class="logo">Dias Utsman<span>.</span></a>
+      <div class="menu-toggle" id="menu-toggle">
+        <input type="checkbox" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-collapse">
+        <div class="empty"></div>
+
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="https://wa.me/6281286465924" target="_blank" class="lets-chat">Let's Chat
+          <i aria-hidden="true" class="fa fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="intro">
+        <h1 id="typeIt"></h1>
+        <p id="typeIt1"></p>
+
+        <div class="links">
+          <a href="https://www.linkedin.com/in/dias-utsman" target="_blank" class="hire-me">Hire Me</a>
+          <a target="_blank" href="https://github.com/diasutsman?tab=repositories" class="projects-link">
+            Projects
+            <i aria-hidden="true" class="fa-solid fa-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="infos">
+          <div class="info">
+            <p>0</p>
+            <p>Clients on work worldwide</p>
+          </div>
+
+          <div class="info">
+            <p id="projectDone"></p>
+            <p>Project Done</p>
+          </div>
+
+          <div class="info">
+            <p>Contact</p>
+            <p>utsmand91@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="title">
+          <p>Project Statistics <span id="year">2022</span></p>
+        </div>
+
+        <div class="data">
+          <div class="data-item">
+            <p>Websites</p>
+            <p id="webCount"></p>
+          </div>
+
+          <div class="data-item">
+            <p>Mobile App</p>
+            <p id="appCount"></p>
+          </div>
+
+          <div class="data-item">
+            <p>Flutter App</p>
+            <p id="flutterCount"></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="hero-img">
+        <img src="./img/dias.webp" alt="Dias Utsman">
+      </div>
+    </section>
+
+    <article class="projects" id="projects">
+      <h1>Projects</h1>
+
+      <h2>Mobile App</h2>
+      <div class="swiper projects-swiper mobile-app">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="text">
+              <p>Weather App</p>
+              <div class="platform">
+                <a href="https://github.com/diasutsman/weather-app" target="_blank">Flutter</a>
+                <a href="https://github.com/diasutsman/WeatherApp" target="_blank">Android</a>
+              </div>
+            </div>
+            <img loading="lazy" src="./img/android/weather-app.webp" alt="Weather">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <p>Notes App</p>
+              <div class="platform">
+                <a aria-disabled="true" target="_blank" href="#" class="disabled">Flutter</a>
+                <a href="https://github.com/diasutsman/NotesApp" target="_blank">Android</a>
+              </div>
+            </div>
+            <img loading="lazy" src="./img/android/notes-app.webp" alt="Notes App">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <p>Alarm App</p>
+              <div class="platform">
+                <a href="#" aria-disabled="true" class="disabled" target="_blank">Flutter</a>
+                <a href="https://github.com/diasutsman/SmartAlarm" target="_blank">Android</a>
+              </div>
+            </div>
+            <img loading="lazy" src="./img/android/alarm-app.webp" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <p>Food App</p>
+              <div class="platform">
+                <a href="#" aria-disabled="true" class="disabled" target="_blank">Flutter</a>
+                <a href="https://github.com/diasutsman/RecipeApp" target="_blank">Android</a>
+              </div>
+            </div>
+            <img loading="lazy" src="./img/android/food-app.webp" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <p>News App</p>
+              <div class="platform">
+                <a href="#" aria-disabled="true" class="disabled" target="_blank">Flutter</a>
+                <a href="https://github.com/diasutsman/NewsApp" target="_blank">Android</a>
+              </div>
+            </div>
+            <img loading="lazy" src="./img/android/news-app.webp" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <p>Portfolio App</p>
+              <div class="platform">
+                <a href="#" aria-disabled="true" class="disabled" target="_blank">Flutter</a>
+                <a href="https://github.com/diasutsman/Portofolio" target="_blank">Android</a>
+              </div>
+            </div>
+            <img loading="lazy" src="./img/android/portfolio-app.webp" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <p>Kisak Nabi App</p>
+              <div class="platform">
+                <a href="#" aria-disabled="true" class="disabled" target="_blank">Flutter</a>
+                <a href="https://github.com/diasutsman/KisahNabiApp" target="_blank">Android</a>
+              </div>
+            </div>
+            <img loading="lazy" src="./img/android/kisah-nabi-app.webp" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <p>Doa dan Dzikir App</p>
+              <div class="platform">
+                <a href="#" aria-disabled="true" class="disabled" target="_blank">Flutter</a>
+                <a href="https://github.com/diasutsman/Doa_dan_Dzikir" target="_blank">Android</a>
+              </div>
+            </div>
+            <img loading="lazy" src="./img/android/doa-dzikir-app.webp" alt="">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button"></div>
+        <div class="swiper-button-next swiper-button"></div>
+      </div>
+
+      <h2>Websites</h2>
+      <div class="swiper projects-swiper websites">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+
+            <div class="text">
+              <p>
+                <a href="https://diasutsman.github.io/analog-clock/" target="_blank">
+                  Analog Clock Web
+                </a>
+              </p>
+            </div>
+            <img loading="lazy"
+              src="https://shot.screenshotapi.net/screenshot?token=WYVZZD3-YAKMV0T-P291HFD-5DMZ6MY&url=https%3A%2F%2Fdiasutsman.github.io%2Fanalog-clock%2F&output=image&file_type=png&wait_for_event=load"
+              alt="
+              Analog Clock Web">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <p>
+                <a href="https://diasutsman.github.io/ITFEST-2022-ngabs-rpl/" target="_blank">
+                  Ngabs Rpl
+                </a>
+              </p>
+            </div>
+            <img loading="lazy"
+              src="https://api.screenshotmachine.com/?key=715404&url=https://diasutsman.github.io/ITFEST-2022-ngabs-rpl/&dimension=350x197"
+              alt="Ngabs Rpl">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <p>
+                <a href="https://diasutsman.github.io/Rumah-Belajar-Profile/" target="_blank">Rumah Belajar</a>
+              </p>
+            </div>
+            <img loading="lazy"
+              src="https://api.screenshotmachine.com/?key=715404&url=https://diasutsman.github.io/Rumah-Belajar-Profile/&dimension=350x197"
+              alt="Rumah Belajar">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <p>
+                <a href="https://diasutsman.github.io/weather-web/" target="_blank">Weather Web</a>
+              </p>
+            </div>
+            <img loading="lazy"
+              src="https://api.screenshotmachine.com/?key=715404&url=https://diasutsman.github.io/weather-web/&dimension=350x197"
+              alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+
+              <p>
+                <a href="https://bookshelfappsdias.netlify.app/" target="_blank">Bookshelf App</a>
+              </p>
+            </div>
+            <img loading="lazy"
+              src="https://shot.screenshotapi.net/screenshot?token=WYVZZD3-YAKMV0T-P291HFD-5DMZ6MY&url=https%3A%2F%2Fbookshelfappsdias.netlify.app%2F&output=image&file_type=webp&wait_for_event=domcontentloaded"
+              alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+
+              <p>
+                <a href="https://diasutsman.github.io/ToDo-List-Drag-And-Drop/" target="_blank">Todo List App</a>
+              </p>
+
+            </div>
+            <img loading="lazy"
+              src="https://api.screenshotmachine.com/?key=715404&url=https://diasutsman.github.io/ToDo-List-Drag-And-Drop/&dimension=350x197"
+              alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+
+              <p>
+                <a href="https://diasutsman.github.io/FoodApp/" target="_blank">Food App</a>
+              </p>
+
+            </div>
+            <img loading="lazy"
+              src="https://api.screenshotmachine.com/?key=715404&url=https://diasutsman.github.io/FoodApp/&dimension=350x197"
+              alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+
+              <p>
+                <a href="https://diasutsman.github.io/Whack-A-mole/" target="_blank">Whack A Mole</a>
+              </p>
+
+            </div>
+            <img loading="lazy"
+              src="https://api.screenshotmachine.com/?key=715404&url=diasutsman.github.io/Whack-A-mole/&dimension=350x197"
+              alt="">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button"></div>
+        <div class="swiper-button-next swiper-button"></div>
+      </div>
+    </article>
+
+    <article class="certificates" id="certificates">
+      <h1>Certificates</h1>
+      <div class="certs-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" id="certsSlide">
+          <!-- Slides -->
+
+        </div>
+      </div>
+    </article>
+
+    <article class="skills" id="skills">
+      <h1>Skills</h1>
+      <div class="content">
+
+      </div>
+    </article>
+  </main>
+
+  <svg style="margin-bottom: -10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#061424" fill-opacity="1"
+      d="M0,160L21.8,138.7C43.6,117,87,75,131,64C174.5,53,218,75,262,106.7C305.5,139,349,181,393,192C436.4,203,480,181,524,149.3C567.3,117,611,75,655,69.3C698.2,64,742,96,785,128C829.1,160,873,192,916,202.7C960,213,1004,203,1047,213.3C1090.9,224,1135,256,1178,224C1221.8,192,1265,96,1309,90.7C1352.7,85,1396,171,1418,213.3L1440,256L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+    </path>
+  </svg>
+  <footer id="contact">
+    <div class="content">
+
+      <div class="contact">
+        <h1>Contact</h1>
+        <ul>
+          <li>
+            <a href="mailto:utsmand91@gmail.com" target="_blank">
+              <i class="fa fa-envelope" aria-hidden="true"></i> utsmand91@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/dias-utsman/" target="_blank">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              diasutsman
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/diasutsman" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              diasutsman
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/dias-utsman/" target="_blank">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              +62 812 8646 5924
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="maps">
+        <iframe title="Maps of Dias Utsman"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.768548192431!2d107.00669633346138!3d-6.37752651441762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6995250e0a31cd%3A0xb11a770947c6fb05!2sRelife%20Greenville%20Cileungsi!5e0!3m2!1sen!2sid!4v1667805989126!5m2!1sen!2sid"
+          allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="copy">
+        <p>Copyright &copy; 2021 Dias Utsman</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="./js/config.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/data.js"></script>
+</body>
+
+</html>
